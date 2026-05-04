@@ -1,0 +1,69 @@
+items:
+  - id: ai_society
+    nav_label: AI & Society
+    title: AI & Society
+    content: >
+      **[Visible Machines](https://visiblemachines.gr/)** founding member:
+
+
+      - **AI auditing**: data-driven NN auditing/editing via metanetworks (regulations, fairness, pruning, etc.), automated bias detection in foundation models (e.g. text-to-image).
+
+      - **Social engagement**: AI news & science communication.
+  - id: articles
+    nav_label: Articles
+    title: Articles
+    content: "*Bias, Transparency, and Accountability of AI Systems*. Op-ed on the
+      necessity of technical audits of AI algorithms. [Read more on Visible
+      Machines](https://visiblemachines.gr/en/node/154) "
+  - id: teaching
+    nav_label: Teaching
+    title: Teaching / Supervision
+    content: >
+      **Postgraduate**
+
+
+      - **[Machine Learning](https://eclass.uoa.gr/courses/DI443/)** (MSc in DSIT - Department of Informatics, UoA): *Fall 2025* — [slides](https://drive.google.com/drive/u/0/folders/11O0yzENT6y2c8ZH-d10Mzy80tij0XuGB)
+
+
+      - **[Deep Learning](https://msc-ai.iit.demokritos.gr/en/classes/deep-learning)** (MSc in AI - NCSR Demokritos): *Spring 2024* — [slides](https://drive.google.com/drive/folders/1eZ_cbhfERj8_L4L84cn9EgnIf-nOHP8B), *Spring 2025* — [slides](https://drive.google.com/drive/folders/1qo6KdGuGLkxbEExrTrQ2BciU5ygUwPDy?usp=sharing)
+  - id: service
+    nav_label: Service
+    title: Service
+    content: >+
+      **Academic Community**: [ELLIS society](https://ellis.eu/) member.
+
+
+      **Workshop organiser**: [ICLR'25 workshop on weight space learning](https://weight-space-learning.github.io/)
+
+
+      **Reviewer**: NeuIPS, ICLR, ICML, LoG, TPAMI, TMLR, etc.
+
+  - id: contact
+    nav_label: Contact
+    title: Contact
+    content: >
+      **Giorgos Bouritsas, PhD**
+
+
+      Machine Learning Postdoctoral fellow,
+
+
+      Archimedes AI Unit / Athena RC
+
+
+      Department of Informatics and Telecommunications, University of Athens
+
+
+      [g.bouritsas@athenarc.gr](mailto:g.bouritsas@athenarc.gr)
+
+
+      **Location:**
+
+
+      Room A14,
+
+
+      Department of Informatics and Telecommunications,
+
+
+      National and Kapodistrian University of Athens, Panepistimioupolis, Ilissia, GR-15784 Athens, Greece

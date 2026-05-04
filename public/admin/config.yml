@@ -1,0 +1,121 @@
+local_backend: true
+
+backend:
+  name: github
+  repo: YOUR-USERNAME/YOUR-REPO
+  branch: main
+
+media_folder: static/images
+public_folder: /images
+
+collections:
+
+  # ── Profile sidebar ───────────────────────────────────────────────
+  - name: profile
+    label: Profile
+    files:
+      - label: Profile
+        name: profile
+        file: data/profile.yaml
+        fields:
+          - { label: Name,           name: name,     widget: string }
+          - { label: Photo,          name: photo,    widget: image,
+              hint: "Upload a new photo or enter a path like /images/photo.jpg" }
+          - { label: Email,          name: email,    widget: string }
+          - { label: GitHub URL,     name: github,   widget: string, required: false }
+          - { label: Google Scholar URL, name: scholar, widget: string, required: false }
+          - { label: LinkedIn URL,   name: linkedin, widget: string, required: false }
+          - { label: Twitter/X URL,  name: twitter,  widget: string, required: false }
+
+  # ── Bio ───────────────────────────────────────────────────────────
+  - name: pages
+    label: Bio
+    files:
+      - label: About / Bio
+        name: index
+        file: content/_index.md
+        fields:
+          - { label: Title, name: title,  widget: string }
+          - { label: Bio,   name: body,   widget: markdown }
+
+  # ── Research interests ────────────────────────────────────────────
+  - name: interests
+    label: Research Interests
+    files:
+      - label: Research Interests
+        name: interests
+        file: data/interests.yaml
+        fields:
+          - label: Columns
+            name: columns
+            widget: list
+            summary: "Column {{index}}"
+            field:
+              label: Interest
+              name: item
+              widget: list
+              field: { label: Item, name: item, widget: string }
+
+  # ── News ──────────────────────────────────────────────────────────
+  - name: news
+    label: News
+    files:
+      - label: News Items
+        name: news
+        file: data/news.yaml
+        fields:
+          - label: News Items
+            name: items
+            widget: list
+            summary: "{{fields.date}} — {{fields.text}}"
+            fields:
+              - { label: Date, name: date, widget: string,
+                  hint: "Display label e.g. Nov 2025" }
+              - { label: Text, name: text, widget: markdown,
+                  hint: "Use bold, links, italics — standard formatting." }
+
+  # ── Publications ──────────────────────────────────────────────────
+  - name: publications
+    label: Publications
+    files:
+      - label: Publications List
+        name: publications
+        file: data/publications.yaml
+        fields:
+          - label: Publications
+            name: items
+            widget: list
+            summary: "{{fields.title}}"
+            fields:
+              - { label: Title,      name: title,   widget: string }
+              - { label: Authors,    name: authors,  widget: string,
+                  hint: "Your name will be automatically underlined." }
+              - { label: Venue,      name: venue,    widget: string }
+              - { label: Paper link, name: link,     widget: string }
+              - { label: Code link,  name: code,     widget: string, required: false,
+                  hint: "Leave blank if no code available" }
+              - { label: BibTeX,     name: bibtex,   widget: text,   required: false }
+
+  # ── Sections (Teaching, AI & Society, Service, Contact + custom) ──
+  - name: sections
+    label: Sections
+    files:
+      - label: Sections
+        name: sections
+        file: data/sections.yaml
+        fields:
+          - label: Sections
+            name: items
+            widget: list
+            summary: "{{fields.title}}"
+            hint: "Drag to reorder. Add a new entry to create a new navbar section."
+            fields:
+              - { label: "ID (no spaces, used for anchor links)",
+                  name: id, widget: string,
+                  hint: "e.g. 'talks' or 'awards' — must be unique, no spaces" }
+              - { label: Navbar label, name: nav_label, widget: string,
+                  hint: "Short label shown in the top navigation" }
+              - { label: Section title, name: title, widget: string,
+                  hint: "Full heading displayed on the page" }
+              - { label: Content, name: content, widget: text,
+                  hint: "Write in HTML. Use <strong>bold</strong>, <a href='...'>links</a>, <ul>/<li> for lists." }

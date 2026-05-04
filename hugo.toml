@@ -1,0 +1,9 @@
+baseURL = "https://gbouritsas.github.io/"
+languageCode = "en-us"
+title = "Giorgos Bouritsas"
+
+[taxonomies]
+  # Disabled — single-page site doesn't use tags or categories
+
+[markup.goldmark.renderer]
+  unsafe = true

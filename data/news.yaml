@@ -1,0 +1,33 @@
+items:
+  - date: May 2026
+    text: 'New paper:  <a href="https://arxiv.org/abs/2512.08724"
+      target="_blank"><i> Exposing Hidden Biases in Text-to-Image Models via Automated Prompt Search
+      </i></a> (<strong
+      class="news_venue">ICML 2026</strong>).'
+  - date: Nov 2025
+    text: 'New research grant: H.F.R.I. research project for postdoctoral
+      researchers (Principal Investigator): <strong>"NNs as Architects
+      (ARCHNETS)"</strong>, start-end date: April 2026- April 2028'
+  - date: Oct 2025
+    text: 'New graduate course: Machine Learning at the MSc <a
+      href="https://dsit.di.uoa.gr/" target="_blank">Data Science and
+      Information Technologies</a>, Department of Informatics, UoA'
+  - date: July 2025
+    text: <strong><a href="https://visiblemachines.gr/" target="_blank">Visible
+      Machines</a></strong>, our non-profit organisation has been launched.
+  - date: Mar 2025
+    text: Weight space learning workshop <a
+      href="https://weight-space-learning.github.io/papers"
+      target="_blank">accepted papers</a> announced.
+  - date: Dec 2024
+    text: Our workshop proposal on <i>Neural Network Weights as a New Data
+      Modality</i> got accepted at ICLR 2025 (Singapore, 27 April 2025).
+  - date: Sep 2024
+    text: 'New paper:  <a href="https://openreview.net/pdf?id=8Fxqn1tZM1"
+      target="_blank"><i>Scale Equivariant Graph Metanetworks</i></a> (<strong
+      class="news_venue">NeurIPS 2024</strong>, <strong>oral</strong>).'
+  - date: Apr 2024
+    text: 'New paper:  <a href="https://openreview.net/pdf?id=SvvvB5t5EW"
+      target="_blank"><i>Bridging Mini-Batch and Asymptotic Analysis in
+      Contrastive Learning: From InfoNCE to Kernel-Based Losses</i></a> (<strong
+      class="news_venue">ICML 2024</strong>).'

@@ -1,0 +1,128 @@
+{{ define "main" }}
+{{ $profile := .Site.Data.profile }}
+<div class="card col-11 mx-auto" id="main">
+  <div class="row pt-1 m-1">
+
+    <!-- ── Bio / About ── -->
+    <div class="row info-text">
+      <div class="col-sm-4">
+        <div class="text-center">
+          <div class="d-block d-sm-none">
+            <img alt="headshot" class="img-fluid center-block about-headshot-mobile" id="portrait-mobile"
+                 src="{{ $profile.photo }}" style="width:300px">
+          </div>
+          <div class="d-none d-sm-block">
+            <img alt="headshot" class="img-fluid center-block about-headshot" id="portrait"
+                 src="{{ $profile.photo }}" style="width:300px">
+          </div>
+          <p class="h3 pt-sm-3 title-name">{{ $profile.name }}</p>
+          {{ if $profile.email }}
+          <a class="fa fa-envelope" href="mailto:{{ $profile.email }}" target="_blank"></a>
+          {{ end }}
+          {{ if $profile.github }}
+          <a class="fa fa-github" href="{{ $profile.github }}" target="_blank"></a>
+          {{ end }}
+          {{ if $profile.scholar }}
+          <a class="fa fa-graduation-cap" href="{{ $profile.scholar }}" target="_blank"></a>
+          {{ end }}
+          {{ if $profile.linkedin }}
+          <a class="fa fa-linkedin" href="{{ $profile.linkedin }}" target="_blank"></a>
+          {{ end }}
+          {{ if $profile.twitter }}
+          <a class="fa fa-twitter" href="{{ $profile.twitter }}" target="_blank"></a>
+          {{ end }}
+        </div>
+      </div>
+
+      <div class="col-sm-8 about-text" id="home">
+        {{ .Content }}
+
+        <!-- ── Research interests ── -->
+        <div class="row" id="research-interests">
+          <p style="font-weight:bold">Scientific interests</p>
+          {{ range .Site.Data.interests.columns }}
+          <div class="col">
+            <ul>
+              {{ range . }}<li>{{ . }}</li>{{ end }}
+            </ul>
+          </div>
+          {{ end }}
+        </div>
+
+        <!-- ── News ── -->
+        <div class="container-fluid" id="news">
+          <span class="news-title">News:</span>
+          <div class="expandable-list">
+            <ul>
+              {{ range .Site.Data.news.items }}
+              <li>
+                <span class="news-date">{{ .date }}</span>
+                <span class="news-entry">{{ .text | markdownify }}</span>
+              </li>
+              {{ end }}
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── Publications ── -->
+    <a name="publications"></a>
+    <div class="row content-header" id="publications_section">
+      <div class="col pr-0"><p>Selected Publications</p></div>
+    </div>
+    {{ range .Site.Data.publications.items }}
+    <div class="row content-summary pt-4 pb-2">
+      <div class="col-xs col-sm-9 my-pub">
+        <p class="publication-title">{{ .title }}</p>
+        <p class="publication-authors">
+          {{ replace .authors "Giorgos Bouritsas" "<u>Giorgos Bouritsas</u>" | safeHTML }}
+        </p>
+        <p class="publication-venue">{{ .venue }}</p>
+        <div class="d-flex flex-row flex-wrap pub-links">
+          <span><a class="publication-link btn-sm badge-button fancy-button" href="{{ .link }}" role="button">paper</a></span>
+          {{ if .code }}
+          <div class="sep">|</div>
+          <span><a class="publication-code btn-sm badge-button fancy-button" href="{{ .code }}" role="button">code</a></span>
+          {{ end }}
+          <div class="sep">|</div>
+          <span>
+            <a class="btn-sm badge-button fancy-button" href="javascript:void(0)" onclick="toggleBibtex(this)" role="button">bibtex</a>
+          </span>
+        </div>
+        <div class="publication-bibtext col-6 code-area" style="display:none">
+          <pre class="pup_bibtext">{{ .bibtex }}</pre>
+          <a class="btn-sm badge-button" href="javascript:void(0)" onclick="copyBibtex(this)">Copy</a>
+        </div>
+      </div>
+    </div>
+    {{ end }}
+
+    <!-- ── Dynamic sections (teaching, AI & Society, service, contact, + any new ones) ── -->
+    {{ range .Site.Data.sections.items }}
+    <div class="row content-header" id="{{ .id }}">
+      <div class="col pr-0"><p>{{ .title }}</p></div>
+    </div>
+    <div class="section-content mt-2 mb-4">
+      {{ .content | markdownify }}
+      {{ if eq .id "contact" }}
+      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12581.541160873434!2d23.7665108!3d37.9681368!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x9e1a1dd511c44165!2sDepartment%20of%20Informatics%20and%20Telecommunications!5e0!3m2!1sen!2sgr!4v1652990436875!5m2!1sen!2sgr"
+              width="600" height="450" style="border:0;margin-top:1em;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
+      {{ end }}
+    </div>
+    {{ end }}
+
+  </div>
+
+  <footer class="footer-text">
+    <div class="container-fluid p-0 m-0">
+      <div class="row no-gutters text-center d-flex justify-content-center m-0">
+        <div class="p-2">
+          <p class="text-center">© {{ now.Format "2006" }} <a href="#" id="footer-name">{{ $profile.name }}</a></p>
+        </div>
+      </div>
+    </div>
+  </footer>
+</div>
+{{ end }}

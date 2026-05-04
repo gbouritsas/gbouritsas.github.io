@@ -1,0 +1,144 @@
+items:
+  - title: "Metanetworks as Regulatory Operators: Learning to Edit for Requirement
+      Compliance"
+    link: https://arxiv.org/abs/2512.15469
+    authors: Ioannis Kalogeropoulos, Giorgos Bouritsas, Yannis Panagakis
+    venue: ICLR'26 AFAA Workshop
+    bibtex: ""
+  - title: Exposing Hidden Biases in Text-to-Image Models via Automated Prompt Search
+    authors: Manos Plitsis, Giorgos Bouritsas, Vassilis Katsouros, Yannis Panagakis
+    venue: International Conference on Machine Learning 2026
+    link: https://arxiv.org/abs/2512.08724
+    bibtex: >-
+      @inproceedings{plitsis2026exposing,
+        title={Exposing Hidden Biases in Text-to-Image Models via Automated Prompt Search},
+        author={Plitsis, Manos and Bouritsas, Giorgos and Katsouros, Vassilis and Panagakis, Yannis},
+        booktitle={International Conference on Machine Learning},
+        year={2026}
+      }
+  - title: Scale Equivariant Graph Metanetworks
+    authors: Ioannis Kalogeropoulos*, Giorgos Bouritsas*, Yannis Panagakis
+    venue: Neural Information Processing Systems 2024
+    link: https://openreview.net/pdf?id=8Fxqn1tZM1
+    code: https://github.com/jkalogero/scalegmn
+    bibtex: >-
+      @inproceedings{
+
+      kalogeropoulos2024scale,
+
+      title={Scale Equivariant Graph Metanetworks},
+
+      author={Ioannis Kalogeropoulos and Giorgos Bouritsas and Yannis Panagakis},
+
+      booktitle={The Thirty-eighth Annual Conference on Neural Information Processing Systems},
+
+      year={2024},
+
+      url={https://openreview.net/forum?id=8Fxqn1tZM1}
+
+      }
+  - title: "Bridging Mini-Batch and Asymptotic Analysis in Contrastive Learning:
+      From InfoNCE to Kernel-Based Losses"
+    authors: Panagiotis Koromilas*, Giorgos Bouritsas*, Theodoros Giannakopoulos,
+      Mihalis Nicolaou, Yannis Panagakis
+    venue: International Conference on Machine Learning 2024
+    link: https://openreview.net/pdf?id=SvvvB5t5EW
+    code: https://github.com/pakoromilas/DHEL-KCL
+    bibtex: >-
+      @inproceedings{koromilasbridging,
+        title={Bridging Mini-Batch and Asymptotic Analysis in Contrastive Learning},
+        author={Koromilas, Panagiotis and Bouritsas, Giorgos and Giannakopoulos, Theodoros and Nicolaou, Mihalis and Panagakis, Yannis},
+        booktitle={Forty-first International Conference on Machine Learning},
+        year={2024}
+      }
+  - title: Towards generalizable particle picking in Cryo-EM images by leveraging
+      Masked AutoEncoders
+    authors: Andreas Zamanos, Panagiotis Koromilas, Giorgos Bouritsas, Panagiotis L
+      Kastritis, Yannis Panagakis
+    venue: Cell reports methods, ICML'24 AccMLBio Workshop
+    link: https://openreview.net/pdf?id=0gOL4G02CG
+    bibtex: >-
+      @article{zamanos2025self,
+        title={Self-supervised learning for generalizable particle picking in cryo-EM micrographs},
+        author={Zamanos, Andreas and Koromilas, Panagiotis and Bouritsas, Giorgos and Kastritis, Panagiotis L and Panagakis, Yannis},
+        journal={Cell reports methods},
+        volume={5},
+        number={7},
+        year={2025},
+        publisher={Elsevier}
+      }
+  - title: "Partition and Code: learning how to compress graphs"
+    authors: Giorgos Bouritsas, Andreas Loukas, Nikolaos Karalias, Michael M Bronstein
+    venue: Neural Information Processing Systems 2021
+    link: https://proceedings.neurips.cc/paper_files/paper/2021/file/9a4d6e8685bd057e4f68930bd7c8ecc0-Paper.pdf
+    code: https://github.com/gbouritsas/PnC/
+    bibtex: >-
+      @article{bouritsas2021partition,
+        title={Partition and code: learning how to compress graphs},
+        author={Bouritsas, Giorgos and Loukas, Andreas and Karalias, Nikolaos and Bronstein, Michael},
+        journal={Advances in Neural Information Processing Systems},
+        volume={34},
+        pages={18603--18619},
+        year={2021}
+      }
+  - title: Deep polynomial neural networks
+    authors: Grigorios G Chrysos, Stylianos Moschoglou, Giorgos Bouritsas, Jiankang
+      Deng, Yannis Panagakis, Stefanos Zafeiriou
+    venue: IEEE Transactions on Pattern Analysis and Machine Intelligence 2021
+    link: https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9353253
+    code: https://github.com/grigorisg9gr/polynomial_nets
+    bibtex: |-
+      @article{chrysos2021deep,
+        title={Deep polynomial neural networks},
+        author={Chrysos, Grigorios G and others},
+        journal={IEEE TPAMI},
+        volume={44},
+        number={8},
+        pages={4021--4034},
+        year={2021}
+      }
+  - title: Improving graph neural network expressivity via subgraph isomorphism
+      counting
+    authors: Giorgos Bouritsas, Fabrizio Frasca, Stefanos Zafeiriou, Michael M Bronstein
+    venue: IEEE Transactions on Pattern Analysis and Machine Intelligence 2022
+    link: https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9721082
+    code: https://github.com/gbouritsas/GSN/
+    bibtex: >-
+      @article{bouritsas2022improving,
+        title={Improving graph neural network expressivity via subgraph isomorphism counting},
+        author={Bouritsas, Giorgos and Frasca, Fabrizio and Zafeiriou, Stefanos and Bronstein, Michael M},
+        journal={IEEE TPAMI},
+        volume={45},
+        number={1},
+        pages={657--668},
+        year={2022}
+      }
+  - title: "Neural 3D Morphable Models: Spiral Convolutional Networks for 3D Shape
+      Representation Learning and Generation"
+    authors: Giorgos Bouritsas, Sergiy Bokhnyak, Stylianos Ploumpis, Michael
+      Bronstein, Stefanos Zafeiriou
+    venue: International Conference on Computer Vision (ICCV) 2019
+    link: https://openaccess.thecvf.com/content_ICCV_2019/papers/Bouritsas_Neural_3D_Morphable_Models_Spiral_Convolutional_Networks_for_3D_Shape_ICCV_2019_paper.pdf
+    code: https://github.com/gbouritsas/Neural3DMM
+    bibtex: >-
+      @inproceedings{bouritsas2019neural,
+        title={Neural 3d morphable models},
+        author={Bouritsas, Giorgos and Bokhnyak, Sergiy and Ploumpis, Stylianos and Bronstein, Michael and Zafeiriou, Stefanos},
+        booktitle={ICCV},
+        pages={7213--7222},
+        year={2019}
+      }
+  - title: "Pi-nets: Deep Polynomial Neural Networks"
+    authors: Grigorios G Chrysos, Stylianos Moschoglou, Giorgos Bouritsas, Jiankang
+      Deng, Yannis Panagakis, Stefanos Zafeiriou
+    venue: IEEE Conference on Computer Vision and Pattern Recognition (CVPR) 2020
+    link: https://openaccess.thecvf.com/content_CVPR_2020/papers/Chrysos_P-nets_Deep_Polynomial_Neural_Networks_CVPR_2020_paper.pdf
+    code: https://github.com/grigorisg9gr/polynomial_nets
+    bibtex: |-
+      @inproceedings{chrysos2020p,
+        title={P-nets: Deep polynomial neural networks},
+        author={Chrysos, Grigorios G and others},
+        booktitle={CVPR},
+        pages={7325--7335},
+        year={2020}
+      }
