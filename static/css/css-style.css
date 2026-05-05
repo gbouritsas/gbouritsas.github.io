@@ -21,7 +21,7 @@ html {
 }
 
 body {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   font-family: 'Lato', sans-serif !important;
   font-family: 'Lora', serif !important;
   background-color: var(--dark_blue) /*#333c40*/ !important; /*#444*/
@@ -68,7 +68,7 @@ a:active {
   color: inherit;
 }
 .about-text p {
-  font-size: 1.4rem;
+  font-size: 1.3rem;
 }
 
 .about-headshot-mobile {
@@ -102,7 +102,7 @@ a:active {
 
 .link-button-small {
   font-family: 'Alegreya', serif;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   padding-left: .5rem;
   padding-right: .5rem;
   color: var(--blue);
@@ -615,5 +615,5 @@ a:active {
 
 .section-content {
   font-family: 'EB Garamond', serif;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
 }
