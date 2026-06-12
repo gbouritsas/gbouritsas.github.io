@@ -12,9 +12,15 @@ items:
   - id: articles
     nav_label: Articles
     title: Articles
-    content: "*Bias, Transparency, and Accountability of AI Systems*. Op-ed on the
+    content:
+      - "*Bias, Transparency, and Accountability of AI Systems*. Op-ed on the
       necessity of technical audits of AI algorithms. [Read more on Visible
       Machines](https://visiblemachines.gr/en/node/154) "
+
+      - "*Exposing the Hidden Biases of AI Image Generators*. Blogpost of the ICML 2026 paper
+      on adversarial bias auditing of AI image generators. [Read more on Visible
+       Machines](https://visiblemachines.gr/en/exposing-hidden-biases-ai-image-generators) "
+
   - id: teaching
     nav_label: Teaching
     title: Teaching / Supervision
