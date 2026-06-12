@@ -12,7 +12,7 @@ items:
   - id: articles
     nav_label: Articles
     title: Articles
-    content:
+    content: >
       - "*Bias, Transparency, and Accountability of AI Systems*. Op-ed on the
       necessity of technical audits of AI algorithms. [Read more on Visible
       Machines](https://visiblemachines.gr/en/node/154) "
